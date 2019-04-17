@@ -45,7 +45,8 @@ class NavBar extends Component {
         <nav
           className="navbar bg-transparent navbar-fixed-top"
           style={{
-            position: "fixed"
+            position: "fixed",
+            zIndex: 1000
           }}
         >
           <ul data-toggle="collapse">
