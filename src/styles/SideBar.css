@@ -2,11 +2,14 @@
   width: 130px;
   position: fixed;
   z-index: 1;
-  top: 20px;
-  left: 10px;
+  top: 4em;
+  left: 4em;
   background: transparent;
   overflow-x: hidden;
-  padding: 8px 0;
+}
+
+.sidenav m {
+  font-size: 30px;
 }
 
 .sidenav a {
@@ -16,12 +19,13 @@
   color: black;
   display: block;
   background: transparent;
+  opacity: 0.5;
   transition: all 0.2s ease-in-out;
 }
 
 .sidenav a:hover {
   position: relative;
-  color: #4b4b4d;
+  opacity: 1;
   transform: scale(1.1);
 }
 
