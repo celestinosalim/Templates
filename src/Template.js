@@ -1,6 +1,5 @@
-import React, { Component } from "react";
 import Profile from "./components/Profile";
 import About from "./components/About";
-import NavBar from "./components/NavBar";
+import SideBar from "./components/SideBar";
 
-export { Profile, About, NavBar };
+export { Profile, About, SideBar };
