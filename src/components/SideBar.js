@@ -4,7 +4,7 @@ import "../styles/SideBar.css";
 
 const propTypes = {
   navLinks: PropTypes.array.isRequired,
-  menu: PropTypes.string.isRequired
+  name: PropTypes.string.isRequired
 };
 
 const defaultProps = {
