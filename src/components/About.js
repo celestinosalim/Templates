@@ -1,18 +1,16 @@
 import React from "react";
+import "../styles/About.css";
 
 const About = () => {
   return (
     <div className="container">
-      <div className="row">
-        <div className="col">
-          <div style={{ fontSize: "30px" }}>
-            <h1>Hello fucking world</h1>
-          </div>
-        </div>
-        <div className="col">
-          <div style={{ fontSize: "20px", color: "red" }}>
-            <h1>Second, but last</h1>
-          </div>
+      <div className="photo">
+        <img
+          src="https://terrigen-cdn-dev.marvel.com/content/prod/1x/019tha_ons_crd_02.jpg"
+          alt=""
+        />
+        <div class="glow-wrap">
+          <i class="glow" />
         </div>
       </div>
     </div>

@@ -2,6 +2,12 @@
 
 Templates for Vsual Resume, Reusable components on NPM
 
+### Requirements
+
+```
+All these templates use bootstrap
+```
+
 ### SideBar
 
 ##### 1. You need to import the component like this:
