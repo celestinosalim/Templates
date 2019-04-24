@@ -36,7 +36,7 @@ class SideBar extends Component {
           aria-expanded="false"
           aria-controls="collapseExample"
         >
-          <m>{this.props.name}</m>
+          <p>{this.props.name}</p>
         </div>
         <div className="collapse" id="collapseExample">
           {this.props.navLinks.map(nav => {
