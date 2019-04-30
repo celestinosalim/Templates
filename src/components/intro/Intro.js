@@ -83,7 +83,7 @@ class Intro extends Component {
 
   render() {
     return (
-      <div className="container-fluid" ref="div">
+      <div className="container-fluid">
         <div className="row" ref="container">
           <div className="canvasdiv" onMouseDown={e => this.eventHandler(e)}>
             <canvas ref="canvas" className="canvas" />
