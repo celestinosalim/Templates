@@ -84,21 +84,19 @@ class Intro extends Component {
 
   render() {
     return (
-      <div className="container-fluid">
-        <div className="row" id="canvasContainer">
-          <div className="canvasdiv" onMouseDown={e => this.eventHandler(e)}>
-            <canvas id="canvas" className="canvas" />
-            <div className="canvas-text">
-              <p style={{ textAlign: "center" }}>
-                <span id="name">
-                  <a href={this.props.link}>
-                    <span>{this.props.name}</span>
-                  </a>
-                  <br />
-                  <span>{this.props.profession}</span>
-                </span>
-              </p>
-            </div>
+      <div className="" id="canvasContainer">
+        <div className="canvasdiv" onMouseDown={e => this.eventHandler(e)}>
+          <canvas id="canvas" className="canvas" />
+          <div className="canvas-text">
+            <p style={{ textAlign: "center" }}>
+              <span id="name">
+                <a href={this.props.link}>
+                  <span>{this.props.name}</span>
+                </a>
+                <br />
+                <span>{this.props.profession}</span>
+              </span>
+            </p>
           </div>
         </div>
       </div>
