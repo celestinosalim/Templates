@@ -1,6 +1,19 @@
 import React, { Component } from "react";
 import Circle from "./Circle";
+import PropTypes from "prop-types";
 import "../../styles/Intro.css";
+
+const propTypes = {
+  name: PropTypes.string.isRequired,
+  profession: PropTypes.string.isRequired,
+  link: PropTypes.string.isRequired
+};
+
+const defaultProps = {
+  name: "Your Name",
+  profession: "Full Stack Web Developer",
+  link: "homeLink"
+};
 
 class Intro extends Component {
   state = {
@@ -77,12 +90,11 @@ class Intro extends Component {
             <div className="canvas-text">
               <p style={{ textAlign: "center" }}>
                 <span id="name">
-                  {/* <span id="hello">Hello I'm </span> */}
-                  <a href="nomames">
-                    <span>Celestino Salim.</span>
+                  <a href={this.props.link}>
+                    <span>{this.props.name}</span>
                   </a>
                   <br />
-                  <span>Full Stack Web Developer.</span>
+                  <span>{this.props.profession}</span>
                 </span>
               </p>
             </div>
@@ -92,5 +104,8 @@ class Intro extends Component {
     );
   }
 }
+
+Intro.propTypes = propTypes;
+Intro.defaultProps = defaultProps;
 
 export default Intro;
