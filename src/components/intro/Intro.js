@@ -75,7 +75,16 @@ class Intro extends Component {
           <div className="canvasdiv" onMouseDown={e => this.eventHandler(e)}>
             <canvas ref="canvas" className="canvas" />
             <div className="canvas-text">
-              <span>Hello I'm CELESTINO SALIM.</span>
+              <p style={{ textAlign: "center" }}>
+                <span id="name">
+                  {/* <span id="hello">Hello I'm </span> */}
+                  <a href="nomames">
+                    <span>Celestino Salim.</span>
+                  </a>
+                  <br />
+                  <span>Full Stack Web Developer.</span>
+                </span>
+              </p>
             </div>
           </div>
         </div>

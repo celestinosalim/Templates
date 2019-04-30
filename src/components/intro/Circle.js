@@ -5,7 +5,7 @@ class Circle {
     dx,
     dy,
     radius,
-    colorArray = ["#0339A6", "#03318C", "#023373", "#2175BF", "#4AA2D9"]
+    colorArray = ["#053959", "#03318C", "#D9C0A3", "#2175BF", "#4AA2D9"]
   ) {
     this.x = x;
     this.y = y;
