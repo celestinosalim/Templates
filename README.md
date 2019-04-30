@@ -84,3 +84,31 @@ Import {About} from 'vs-template1'
 ```
     <About description=`Lorem Ipsum`  />
 ```
+
+### Intro
+
+##### 1. You need to import the component like this:
+
+```
+Import {Intro} from 'vs-template1'
+```
+
+##### 2. Intro component receives three props:
+
+- name: String representing your name.
+
+```
+    <Intro name={'Celestino Salim'} />
+```
+
+- profession: Takes a String that will be displayed under your name.
+
+```
+    <Intro profession='Software Engineer'  />
+```
+
+- link: Takes a String that correspond to the route of your homepage.
+
+```
+    <Intro link=`home`  />
+```
