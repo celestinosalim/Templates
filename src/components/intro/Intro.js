@@ -25,13 +25,14 @@ class Intro extends Component {
   }
 
   animation = () => {
-    const canvas = this.refs.canvas;
-    canvas.width = this.refs.container.clientWidth;
-    canvas.height = this.refs.container.clientHeight;
+    const canvas = document.querySelector("#canvas");
+    const canvasContainer = document.querySelector("#canvasContainer");
+    canvas.width = canvasContainer.clientWidth;
+    canvas.height = canvasContainer.clientHeight;
 
     window.addEventListener("resize", () => {
-      canvas.width = this.refs.container.clientWidth;
-      canvas.height = this.refs.container.clientHeight;
+      canvas.width = canvasContainer.clientWidth;
+      canvas.height = canvasContainer.clientHeight;
     });
 
     const c = canvas.getContext("2d");
@@ -84,9 +85,9 @@ class Intro extends Component {
   render() {
     return (
       <div className="container-fluid">
-        <div className="row" ref="container">
+        <div className="row" id="canvasContainer">
           <div className="canvasdiv" onMouseDown={e => this.eventHandler(e)}>
-            <canvas ref="canvas" className="canvas" />
+            <canvas id="canvas" className="canvas" />
             <div className="canvas-text">
               <p style={{ textAlign: "center" }}>
                 <span id="name">
