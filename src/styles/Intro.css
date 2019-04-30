@@ -25,3 +25,43 @@
   color: red;
   font-size: 50px;
 }
+
+@media only screen and (max-width: 1024px) {
+  .canvas {
+    height: 1366px;
+    width: 1024px;
+  }
+  .canvas-text span {
+    font-size: 70px;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  .canvas {
+    height: 1000px;
+    width: 480px;
+  }
+  .canvas-text span {
+    font-size: 30px;
+  }
+}
+
+@media screen and (max-width: 450px) {
+  .canvas {
+    height: 900px;
+    width: 480px;
+  }
+  .canvas-text span {
+    font-size: 30px;
+  }
+}
+
+@media screen and (max-width: 375px) {
+  .canvas {
+    height: 850px;
+    width: 375px;
+  }
+  .canvas-text span {
+    font-size: 30px;
+  }
+}
