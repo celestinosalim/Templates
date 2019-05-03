@@ -1,7 +1,7 @@
 import React, { Component } from "react";
 import PropTypes from "prop-types";
 import ProjectCard from "./ProjectCard";
-import "./ProjectContainer.css";
+import "../../styles/ProjectContainer.css";
 
 const propTypes = {
   projects: PropTypes.array.isRequired
