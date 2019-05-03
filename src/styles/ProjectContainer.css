@@ -9,6 +9,7 @@
   align-content: center;
   font-size: 60px;
   text-decoration: underline #0f9fbf double;
+  text-decoration-skip-ink: none;
 }
 
 @media (max-width: 321px) {
