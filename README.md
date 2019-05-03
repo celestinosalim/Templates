@@ -24,10 +24,10 @@ All these templates use bootstrap make sure to add their CDN to your index.html 
 ##### 1. You need to import the component like this:
 
 ```
-Import {SideBar} from 'vs-template1'
+import {SideBar} from 'vs-template1'
 ```
 
-##### 2. SideBar component receives two kind of props:
+##### 2. SideBar component receives two props:
 
 - name: Takes a string as the title of the SideBar Dropdown.
 
@@ -40,7 +40,7 @@ Import {SideBar} from 'vs-template1'
   - pathRef: Path of your Route.
 
 ```
- let myLinks: [
+ let myLinks= [
     {
       pathName: "FirstLink",
       pathRef: "/first"
@@ -62,7 +62,7 @@ Import {SideBar} from 'vs-template1'
 ##### 1. You need to import the component like this:
 
 ```
-Import {About} from 'vs-template1'
+import {About} from 'vs-template1'
 ```
 
 ##### 2. About component receives three props:
@@ -90,7 +90,7 @@ Import {About} from 'vs-template1'
 ##### 1. You need to import the component like this:
 
 ```
-Import {Intro} from 'vs-template1'
+import {Intro} from 'vs-template1'
 ```
 
 ##### 2. Intro component receives three props:
