@@ -10,6 +10,7 @@
   font-size: 60px;
   text-decoration: underline #0f9fbf double;
   text-decoration-skip-ink: none;
+  text-underline-position: under;
 }
 
 @media (max-width: 321px) {
