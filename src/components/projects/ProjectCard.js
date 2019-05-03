@@ -1,5 +1,6 @@
 import React from "react";
 import PropTypes from "prop-types";
+import "../../styles/ProjectCard.css";
 
 const arrayOfLength = function(expectedLength, props, propName, componentName) {
   const arrayPropLength = props[propName].length;
