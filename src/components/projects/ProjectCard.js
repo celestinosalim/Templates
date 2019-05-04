@@ -56,7 +56,7 @@ const ProjectCard = props => {
         <span
           name={link}
           className="skill-card__duration"
-          onClick={changeLocation()}
+          onClick={e => changeLocation(e)}
         >
           Learn More
         </span>
