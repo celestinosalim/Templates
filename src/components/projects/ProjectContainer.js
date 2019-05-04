@@ -44,10 +44,8 @@ class ProjectContainer extends Component {
         link={
           project.link.includes("http")
             ? project.link
-            : console.log(
-                new Error(
-                  " link property Must be prepended with http:// or https://  "
-                )
+            : new Error(
+                " link property Must be prepended with http:// or https://  "
               )
         }
         languages={project.languages}
