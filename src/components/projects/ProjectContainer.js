@@ -37,10 +37,11 @@ const propTypes = {
     PropTypes.shape({
       imageURL: PropTypes.string.isRequired,
       title: PropTypes.string.isRequired,
-      link: cleanString,
-      languages: arrayOfLength.bind(0, 3)
+      link: cleanString.isRequired,
+      languages: arrayOfLength.bind(0, 3).isRequired
     }).isRequired
-  )
+  ),
+  link: cleanString
 };
 
 const defaultProps = {
