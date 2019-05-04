@@ -11,6 +11,7 @@
   text-decoration: underline #0f9fbf double;
   text-decoration-skip-ink: none;
   text-underline-position: under;
+  padding-bottom: 30px;
 }
 
 @media (max-width: 321px) {
