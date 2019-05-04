@@ -79,7 +79,11 @@ class ProjectContainer extends Component {
       <ProjectCard
         imageURL={project.imageURL}
         title={project.title}
-        link={project.link}
+        link={
+          project.link.includes("http")
+            ? null
+            : console.log("must include http")
+        }
         languages={project.languages}
         key={key++}
       />
