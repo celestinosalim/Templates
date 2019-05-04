@@ -42,8 +42,8 @@ const ProjectCard = props => {
     <li key={key++}>{language}</li>
   ));
 
-  const changeLocation = (e, link) => {
-    return (window.location = link);
+  const changeLocation = e => {
+    window.location = e.target.name;
   };
 
   return (
@@ -53,8 +53,12 @@ const ProjectCard = props => {
       </header>
       <section className="skill-card__body">
         <h2 className="skill-card__title">{title}</h2>
-        <span className="skill-card__duration">
-          <a onClick={(e, link) => changeLocation(e, link)}>Learn More</a>
+        <span
+          name={link}
+          className="skill-card__duration"
+          onClick={changeLocation()}
+        >
+          Learn More
         </span>
         <ul className="skill-card__knowledge">
           {languages.length <= 3 && languageToRender}
