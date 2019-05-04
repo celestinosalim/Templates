@@ -39,7 +39,7 @@ const propTypes = {
       title: PropTypes.string.isRequired,
       link: cleanString,
       languages: arrayOfLength.bind(0, 3)
-    })
+    }).isRequired
   )
 };
 
