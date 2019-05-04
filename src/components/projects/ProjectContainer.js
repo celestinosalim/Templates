@@ -3,8 +3,44 @@ import PropTypes from "prop-types";
 import ProjectCard from "./ProjectCard";
 import "../../styles/ProjectContainer.css";
 
+const arrayOfLength = function(expectedLength, props, propName, componentName) {
+  const arrayPropLength = props[propName].length;
+  let err;
+
+  if (arrayPropLength > expectedLength) {
+    return new Error(
+      `Invalid array length ${arrayPropLength} (expected ${expectedLength}) for prop ${propName} supplied to ${componentName}. Validation failed.`
+    );
+  }
+};
+
+const cleanString = (props, propName, componentName) => {
+  componentName = componentName || "ANONYMOUS";
+  if (props) {
+    let value = props[propName];
+    if (typeof value === "string") {
+      return value.includes("http")
+        ? null
+        : new Error(
+            propName +
+              " in " +
+              componentName +
+              " Must be prepended with http:// or https://  "
+          );
+    }
+  }
+  return null;
+};
+
 const propTypes = {
-  projects: PropTypes.array.isRequired && PropTypes.instaceOf(ProjectCard)
+  projects: PropTypes.arrayOf(
+    PropTypes.shape({
+      imageURL: PropTypes.string.isRequired,
+      title: PropTypes.string.isRequired,
+      link: cleanString,
+      languages: arrayOfLength.bind(0, 3)
+    })
+  )
 };
 
 const defaultProps = {
