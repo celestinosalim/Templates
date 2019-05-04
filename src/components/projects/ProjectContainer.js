@@ -21,11 +21,13 @@ const cleanString = (props, propName, componentName) => {
     if (typeof value === "string") {
       return value.includes("http")
         ? null
-        : new Error(
-            propName +
-              " in " +
-              componentName +
-              " Must be prepended with http:// or https://  "
+        : console.log(
+            new Error(
+              propName +
+                " in " +
+                componentName +
+                " Must be prepended with http:// or https://  "
+            )
           );
     }
   }
@@ -40,8 +42,7 @@ const propTypes = {
       link: cleanString.isRequired,
       languages: arrayOfLength.bind(0, 3).isRequired
     }).isRequired
-  ),
-  link: cleanString
+  )
 };
 
 const defaultProps = {
