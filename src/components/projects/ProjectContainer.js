@@ -4,7 +4,7 @@ import ProjectCard from "./ProjectCard";
 import "../../styles/ProjectContainer.css";
 
 const propTypes = {
-  projects: PropTypes.array.isRequired
+  projects: PropTypes.array.isRequired && PropTypes.instaceOf(ProjectCard)
 };
 
 const defaultProps = {
@@ -13,21 +13,21 @@ const defaultProps = {
       imageURL:
         "https://g.foolcdn.com/editorial/images/494454/resume_gettyimages-587892248.jpg",
       title: "Vsual Resume",
-      link: "www.vsualresume.com",
+      link: "http://www.vsualresume.com",
       languages: ["Ruby on Rails", "React JS & Redux", "JWT"]
     },
     {
       imageURL:
         "https://g.foolcdn.com/editorial/images/494454/resume_gettyimages-587892248.jpg",
       title: "Vsual Resume",
-      link: "www.vsualresume.com",
+      link: "http://www.vsualresume.com",
       languages: ["Ruby on Rails", "React JS & Redux", "JWT"]
     },
     {
       imageURL:
         "https://g.foolcdn.com/editorial/images/494454/resume_gettyimages-587892248.jpg",
       title: "Vsual Resume",
-      link: "www.vsualresume.com",
+      link: "http://www.vsualresume.com",
       languages: ["Ruby on Rails", "React JS & Redux", "JWT"]
     }
   ]
