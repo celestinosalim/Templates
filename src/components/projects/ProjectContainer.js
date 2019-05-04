@@ -34,12 +34,14 @@ const cleanString = (props, propName, componentName) => {
 
 const propTypes = {
   projects: PropTypes.arrayOf(
-    PropTypes.shape({
-      imageURL: PropTypes.string.isRequired,
-      title: PropTypes.string.isRequired,
-      link: cleanString,
-      languages: arrayOfLength.bind(0, 3)
-    })
+    PropTypes.objectOf(
+      PropTypes.shape({
+        imageURL: PropTypes.string.isRequired,
+        title: PropTypes.string.isRequired,
+        link: cleanString,
+        languages: arrayOfLength.bind(0, 3)
+      })
+    )
   )
 };
 
