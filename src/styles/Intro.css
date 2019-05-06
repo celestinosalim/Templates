@@ -13,8 +13,8 @@
 .canvas-text {
   z-index: 3;
   background-size: 100%;
-  display: flex;
-  position: fixed;
+  /* display: flex; */
+  position: absolute;
   align-items: center;
   justify-content: center;
   min-width: 100%;
