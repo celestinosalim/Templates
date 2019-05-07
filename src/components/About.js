@@ -1,6 +1,7 @@
 import React, { Component } from "react";
 import "../styles/About.css";
 import PropTypes from "prop-types";
+import Title from "./Title";
 
 const propTypes = {
   name: PropTypes.string.isRequired,
@@ -29,11 +30,7 @@ class About extends Component {
     return (
       <div className="container about-container">
         <div className="row first-row">
-          <div className="col">
-            <div className="title">
-              <span>About</span>
-            </div>
-          </div>
+          <Title title="About" />
         </div>
         <div className="row second-row">
           <div className="col-md-6 col-sm-12 image-col justify-content-end">

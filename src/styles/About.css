@@ -5,12 +5,7 @@
 }
 
 .first-row {
-  font-size: 60px;
-  text-decoration: underline #595959;
-  text-decoration-skip-ink: none;
-  text-underline-position: under;
-  padding-bottom: 30px;
-  padding: 0px;
+  padding-bottom: 50px;
 }
 
 .image-col {
@@ -18,7 +13,6 @@
   min-height: 400px;
   max-height: 400px;
   text-align: right;
-  /* border: 5px solid green; */
 }
 
 .text-col {
@@ -35,14 +29,6 @@
 .text-col-content {
   text-align: justify;
   font-size: 20px;
-}
-
-.title {
-  text-align: center;
-}
-
-.title span {
-  font-size: 50px;
 }
 
 .my-card {
