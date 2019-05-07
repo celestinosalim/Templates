@@ -1,0 +1,37 @@
+.skillsContainer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  margin-top: 40px;
+}
+.skillsContainer .box {
+  border-radius: 10px;
+  margin: 10px;
+  transition: 0.3s all ease-in-out;
+  position: relative;
+  min-width: 120px;
+  box-shadow: 0px 0px 30px #c4e1f2;
+}
+.skillsContainer .box .boxContent {
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  padding: 5px;
+}
+
+.skillsContainer .box .boxContent .title {
+  font-size: 20px;
+  color: #126da6;
+  font-weight: bold;
+  padding: 3px;
+}
+
+.skillsContainer .box:hover {
+  background: linear-gradient(130deg, #126da6 0%, #5faad9 100%);
+  box-shadow: none;
+}
+.skillsContainer .box:hover .title {
+  color: white;
+  transition: 0.3s all ease-in-out;
+}
