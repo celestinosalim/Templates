@@ -38,23 +38,28 @@ class ProjectContainer extends Component {
   state = {};
 
   projectsToRender() {
-    return this.props.projects.map((project, key = 0) => (
-      <ProjectCard
-        image={project.image}
-        name={project.name}
-        url={
-          project.url.includes("http")
-            ? project.url
-            : console.error(
-                new Error(
-                  " url property Must be prepended with http:// or https://  "
-                )
-              )
-        }
-        description={project.description}
-        key={key++}
-      />
-    ));
+    return this.props.projects.map(
+      (project, key = 0) => (
+        (
+          <ProjectCard
+            image={project.image}
+            name={project.name}
+            url={
+              project.url.includes("http")
+                ? project.url
+                : console.error(
+                    new Error(
+                      " url property Must be prepended with http:// or https://  "
+                    )
+                  )
+            }
+            description={project.description}
+            key={key++}
+          />
+        ),
+        console.log(project)
+      )
+    );
   }
 
   render() {
