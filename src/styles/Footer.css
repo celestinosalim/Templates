@@ -1,23 +1,23 @@
 .footer-margin {
-  height: 250px;
   background: #011526;
-  padding: 70px 0 50px 0;
-  position: relative;
 }
 
 .footer-container {
-  text-align: center;
+  min-height: 150px;
   color: white;
 }
 
+#footer-text {
+  width: 100%;
+  text-align: center;
+  color: white;
+}
 /* Let's style the wrapper in such away that, 
-  it should always be at the center of the browser */
+it should always be at the center of the browser */
 .wrapper {
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  width: 550px;
+  width: 465px;
+  padding: 0%;
+  padding-top: 50px;
 }
 
 /* Style the Un-order list by setting its list-style to none */
@@ -26,8 +26,8 @@
 }
 
 /* Style the list items inside the UL list, by setting its width, height and line-height 
-    and float them to left and set its border and border-radius.
-   */
+  and float them to left and set its border and border-radius.
+ */
 .wrapper ul li {
   width: 75px;
   height: 75px;
@@ -42,7 +42,7 @@
 }
 
 /* Style the icons by setting its color and margin-top value to 20px 
-  to align it properly */
+to align it properly */
 .wrapper ul li .fa {
   color: #d8e2dc;
   margin-top: 20px;
@@ -50,7 +50,7 @@
 }
 
 /* Now target the specific li classes for styling and use box-shadow effect to border and text-shadow effect
-    to icons for glowing effect and use transition property for smooth transition effect. */
+  to icons for glowing effect and use transition property for smooth transition effect. */
 /*facebook*/
 .wrapper ul li:hover.facebook {
   border: 5px solid #3b5998;
@@ -61,6 +61,45 @@
 .wrapper ul li:hover .fa-facebook {
   color: #3b5998;
   text-shadow: 0 0 15px #3b5998;
+  transition: all 0.5s ease;
+}
+
+/*linkedin*/
+.wrapper ul li:hover.linkedin {
+  border: 5px solid #0487d9;
+  box-shadow: 0 0 15px #0487d9;
+  transition: all 0.5s ease;
+}
+
+.wrapper ul li:hover .fa-linkedin {
+  color: #0487d9;
+  text-shadow: 0 0 15px #0487d9;
+  transition: all 0.5s ease;
+}
+
+/*github*/
+.wrapper ul li:hover.github {
+  border: 5px solid #bc0fbf;
+  box-shadow: 0 0 15px #bc0fbf;
+  transition: all 0.5s ease;
+}
+
+.wrapper ul li:hover .fa-github {
+  color: #bc0fbf;
+  text-shadow: 0 0 15px #bc0fbf;
+  transition: all 0.5s ease;
+}
+
+/*email*/
+.wrapper ul li:hover.email {
+  border: 5px solid #ecec88;
+  box-shadow: 0 0 15px #ecec88;
+  transition: all 0.5s ease;
+}
+
+.wrapper ul li:hover .fa-envelope {
+  color: #ecec88;
+  text-shadow: 0 0 15px #ecec88;
   transition: all 0.5s ease;
 }
 
@@ -103,6 +142,19 @@
   transition: all 0.5s ease;
 }
 
+/* pinterest */
+.wrapper ul li:hover.pinterest {
+  border: 5px solid #f23847;
+  box-shadow: 0 0 15px #f23847;
+  transition: all 0.5s ease;
+}
+
+.wrapper ul li:hover .fa-pinterest {
+  color: #f23847;
+  text-shadow: 0 0 15px #f23847;
+  transition: all 0.5s ease;
+}
+
 /* whatsapp */
 .wrapper ul li:hover.whatsapp {
   border: 5px solid #4dc247;
@@ -116,47 +168,62 @@
   transition: all 0.5s ease;
 }
 
+/*medium*/
+.wrapper ul li:hover.medium {
+  border: 5px solid #49bf94;
+  box-shadow: 0 0 15px #49bf94;
+  transition: all 0.5s ease;
+}
+
+.wrapper ul li:hover .fa-medium {
+  color: #49bf94;
+  text-shadow: 0 0 15px #49bf94;
+  transition: all 0.5s ease;
+}
+
+/*youtube*/
+.wrapper ul li:hover.youtube {
+  border: 5px solid red;
+  box-shadow: 0 0 15px red;
+  transition: all 0.5s ease;
+}
+
+.wrapper ul li:hover .fa-youtube {
+  color: red;
+  text-shadow: 0 0 15px red;
+  transition: all 0.5s ease;
+}
+
 /* media queries */
 
 @media screen and (max-width: 640px) {
   .wrapper {
-    width: 350px;
+    width: 80%;
+    padding-bottom: 20px;
   }
   .wrapper ul li {
     margin-top: 10px;
   }
-  .wrapper ul li.google {
-    margin-left: 60px;
+  .wrapper ul li {
+    margin-left: 20px;
+  }
+  #footer-text {
+    width: 80%;
   }
 }
 
 @media screen and (max-width: 340px) {
   .wrapper {
-    width: 150px;
+    width: 80%;
+    padding-bottom: 20px;
+  }
+  #footer-text {
+    width: 80%;
   }
   .wrapper ul li {
     margin: 15px;
   }
-  .wrapper ul li.google {
+  .wrapper ul li {
     margin-left: 15px;
   }
-}
-
-/* youtube link */
-.youtube {
-  position: fixed;
-  bottom: 10px;
-  right: 10px;
-  width: 160px;
-  text-align: center;
-  padding: 15px 10px;
-  background: #bb0000;
-  border-radius: 5px;
-}
-
-.youtube a {
-  text-decoration: none;
-  color: #fff;
-  text-transform: capitalize;
-  letter-spacing: 1px;
 }
