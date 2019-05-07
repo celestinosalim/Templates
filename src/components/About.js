@@ -31,7 +31,7 @@ class About extends Component {
         <div className="row first-row">
           <div className="col">
             <div className="title">
-              <span>{this.props.name.toUpperCase()}</span>
+              <span>About</span>
             </div>
           </div>
         </div>
@@ -47,7 +47,7 @@ class About extends Component {
             </div>
           </div>
           <div className="col-md-6 col-sm-12 text-col">
-            <span>ABOUT</span>
+            <span>{this.props.name}</span>
             <p>____</p>
 
             <div className="text-col-content">
