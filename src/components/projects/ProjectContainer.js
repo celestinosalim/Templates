@@ -8,31 +8,31 @@ const propTypes = {
   projects: PropTypes.array.isRequired
 };
 
-const defaultProps = {
-  projects: [
-    {
-      image:
-        "https://g.foolcdn.com/editorial/images/494454/resume_gettyimages-587892248.jpg",
-      name: "Vsual Resume",
-      url: "http://www.vsualresume.com",
-      description: ["Ruby on Rails", "React JS & Redux", "JWT"]
-    },
-    {
-      image:
-        "https://g.foolcdn.com/editorial/images/494454/resume_gettyimages-587892248.jpg",
-      name: "Vsual Resume",
-      url: "http://www.vsualresume.com",
-      description: ["Ruby on Rails", "React JS & Redux", "JWT"]
-    },
-    {
-      image:
-        "https://g.foolcdn.com/editorial/images/494454/resume_gettyimages-587892248.jpg",
-      name: "Vsual Resume",
-      url: "http://www.vsualresume.com",
-      description: ["Ruby on Rails", "React JS & Redux", "JWT"]
-    }
-  ]
-};
+// const defaultProps = {
+//   projects: [
+//     {
+//       image:
+//         "https://g.foolcdn.com/editorial/images/494454/resume_gettyimages-587892248.jpg",
+//       name: "Vsual Resume",
+//       url: "http://www.vsualresume.com",
+//       description: ["Ruby on Rails", "React JS & Redux", "JWT"]
+//     },
+//     {
+//       image:
+//         "https://g.foolcdn.com/editorial/images/494454/resume_gettyimages-587892248.jpg",
+//       name: "Vsual Resume",
+//       url: "http://www.vsualresume.com",
+//       description: ["Ruby on Rails", "React JS & Redux", "JWT"]
+//     },
+//     {
+//       image:
+//         "https://g.foolcdn.com/editorial/images/494454/resume_gettyimages-587892248.jpg",
+//       name: "Vsual Resume",
+//       url: "http://www.vsualresume.com",
+//       description: ["Ruby on Rails", "React JS & Redux", "JWT"]
+//     }
+//   ]
+// };
 
 class ProjectContainer extends Component {
   state = {};
@@ -77,6 +77,6 @@ class ProjectContainer extends Component {
 }
 
 ProjectContainer.propTypes = propTypes;
-ProjectContainer.defaultProps = defaultProps;
+// ProjectContainer.defaultProps = defaultProps;
 
 export default ProjectContainer;
