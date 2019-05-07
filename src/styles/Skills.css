@@ -4,6 +4,8 @@
   align-items: center;
   flex-wrap: wrap;
   margin-top: 40px;
+  padding-inline-start: 0px;
+  padding-left: 0px;
 }
 .skillsContainer .box {
   border-radius: 10px;
