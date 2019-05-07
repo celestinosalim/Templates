@@ -5,7 +5,8 @@ import "../styles/SideBar.css";
 const propTypes = {
   navLinks: PropTypes.array.isRequired,
   name: PropTypes.string.isRequired,
-  color: PropTypes.string.isRequired
+  color: PropTypes.string.isRequired,
+  linkColor: PropTypes.string.isRequired
 };
 
 const defaultProps = {
@@ -24,7 +25,8 @@ const defaultProps = {
     }
   ],
   name: "MENU",
-  color: "black"
+  color: "black",
+  linkColor: "black"
 };
 
 class SideBar extends Component {
@@ -43,7 +45,11 @@ class SideBar extends Component {
         <div className="collapse" id="collapseExample">
           {this.props.navLinks.map(nav => {
             return (
-              <a href={nav.pathRef} key={nav.pathRef}>
+              <a
+                style={{ linkColor: this.props.linkColor }}
+                href={nav.pathRef}
+                key={nav.pathRef}
+              >
                 {nav.pathName}
               </a>
             );
