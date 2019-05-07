@@ -1,6 +1,6 @@
 {
   "name": "vs-template1",
-  "version": "1.0.74",
+  "version": "1.0.75",
   "description": "React Template 1 for Vsual Resume",
   "main": "./lib/Template.js",
   "license": "MIT",
