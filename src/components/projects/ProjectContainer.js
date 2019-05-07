@@ -11,25 +11,25 @@ const propTypes = {
 const defaultProps = {
   projects: [
     {
-      image:
+      imageURL:
         "https://g.foolcdn.com/editorial/images/494454/resume_gettyimages-587892248.jpg",
-      name: "Vsual Resume",
-      url: "http://www.vsualresume.com",
-      description: ["Ruby on Rails", "React JS & Redux", "JWT"]
+      title: "Vsual Resume",
+      link: "http://www.vsualresume.com",
+      languages: ["Ruby on Rails", "React JS & Redux", "JWT"]
     },
     {
-      image:
+      imageURL:
         "https://g.foolcdn.com/editorial/images/494454/resume_gettyimages-587892248.jpg",
-      name: "Vsual Resume",
-      url: "http://www.vsualresume.com",
-      description: ["Ruby on Rails", "React JS & Redux", "JWT"]
+      title: "Vsual Resume",
+      link: "http://www.vsualresume.com",
+      languages: ["Ruby on Rails", "React JS & Redux", "JWT"]
     },
     {
-      image:
+      imageURL:
         "https://g.foolcdn.com/editorial/images/494454/resume_gettyimages-587892248.jpg",
-      name: "Vsual Resume",
-      url: "http://www.vsualresume.com",
-      description: ["Ruby on Rails", "React JS & Redux", "JWT"]
+      title: "Vsual Resume",
+      link: "http://www.vsualresume.com",
+      languages: ["Ruby on Rails", "React JS & Redux", "JWT"]
     }
   ]
 };
@@ -38,28 +38,23 @@ class ProjectContainer extends Component {
   state = {};
 
   projectsToRender() {
-    return this.props.projects.map(
-      (project, key = 0) => (
-        (
-          <ProjectCard
-            image={project.image}
-            name={project.name}
-            url={
-              project.url.includes("http")
-                ? project.url
-                : console.error(
-                    new Error(
-                      " url property Must be prepended with http:// or https://  "
-                    )
-                  )
-            }
-            description={project.description}
-            key={key++}
-          />
-        ),
-        console.log(project)
-      )
-    );
+    return this.props.projects.map((project, key = 0) => (
+      <ProjectCard
+        imageURL={project.imageURL}
+        title={project.title}
+        link={
+          project.link.includes("http")
+            ? project.link
+            : console.error(
+                new Error(
+                  " link property Must be prepended with http:// or https://  "
+                )
+              )
+        }
+        languages={project.languages}
+        key={key++}
+      />
+    ));
   }
 
   render() {
