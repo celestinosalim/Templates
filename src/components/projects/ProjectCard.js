@@ -32,39 +32,39 @@ const cleanString = (props, propName, componentName) => {
 };
 
 const propTypes = {
-  imageURL: PropTypes.string.isRequired,
-  title: PropTypes.string.isRequired,
-  link: cleanString,
-  languages: arrayOfLength.bind(0, 3)
+  image: PropTypes.string.isRequired,
+  name: PropTypes.string.isRequired,
+  url: cleanString,
+  description: arrayOfLength.bind(0, 3)
 };
 
 const defaultProps = {
-  imageURL:
+  image:
     "https://g.foolcdn.com/editorial/images/494454/resume_gettyimages-587892248.jpg",
-  title: "Vsual Resume",
-  link: "http://www.vsualresume.com",
-  languages: ["Ruby on Rails", "React JS & Redux", "JWT"]
+  name: "Vsual Resume",
+  url: "http://www.vsualresume.com",
+  description: ["Ruby on Rails", "React JS & Redux", "JWT"]
 };
 
 const ProjectCard = props => {
-  let { imageURL, title, languages, link } = props;
+  let { image, name, description, url } = props;
 
-  let languageToRender = languages.map((language, key = 0) => (
+  let languageToRender = description.map((language, key = 0) => (
     <li key={key++}>{language}</li>
   ));
 
   return (
     <div className="skill-card">
       <header className="skill-card__header">
-        <img className="skill-card__icon" src={imageURL} alt="Logo" />
+        <img className="skill-card__icon" src={image} alt="Logo" />
       </header>
       <section className="skill-card__body">
-        <h2 className="skill-card__title">{title}</h2>
+        <h2 className="skill-card__title">{name}</h2>
         <span className="skill-card__duration">
-          <a href={link}>Learn More</a>
+          <a href={url}>Learn More</a>
         </span>
         <ul className="skill-card__knowledge">
-          {languages.length <= 3 && languageToRender}
+          {description.length <= 3 && languageToRender}
         </ul>
       </section>
     </div>
