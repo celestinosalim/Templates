@@ -46,7 +46,7 @@ const Skills = props => {
   return (
     <div className="container justify-content-center">
       <Title title="Skills" />
-      <ul className="skillsContainer">{this.skillsToRender(skills)}</ul>;
+      <ul className="skillsContainer">{skillsToRender(skills)}</ul>;
     </div>
   );
 };
