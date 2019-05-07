@@ -11,25 +11,25 @@ const propTypes = {
 const defaultProps = {
   projects: [
     {
-      imageURL:
+      image:
         "https://g.foolcdn.com/editorial/images/494454/resume_gettyimages-587892248.jpg",
-      title: "Vsual Resume",
-      link: "http://www.vsualresume.com",
-      languages: ["Ruby on Rails", "React JS & Redux", "JWT"]
+      name: "Vsual Resume",
+      url: "http://www.vsualresume.com",
+      description: ["Ruby on Rails", "React JS & Redux", "JWT"]
     },
     {
-      imageURL:
+      image:
         "https://g.foolcdn.com/editorial/images/494454/resume_gettyimages-587892248.jpg",
-      title: "Vsual Resume",
-      link: "http://www.vsualresume.com",
-      languages: ["Ruby on Rails", "React JS & Redux", "JWT"]
+      name: "Vsual Resume",
+      url: "http://www.vsualresume.com",
+      description: ["Ruby on Rails", "React JS & Redux", "JWT"]
     },
     {
-      imageURL:
+      image:
         "https://g.foolcdn.com/editorial/images/494454/resume_gettyimages-587892248.jpg",
-      title: "Vsual Resume",
-      link: "http://www.vsualresume.com",
-      languages: ["Ruby on Rails", "React JS & Redux", "JWT"]
+      name: "Vsual Resume",
+      url: "http://www.vsualresume.com",
+      description: ["Ruby on Rails", "React JS & Redux", "JWT"]
     }
   ]
 };
@@ -40,18 +40,18 @@ class ProjectContainer extends Component {
   projectsToRender() {
     return this.props.projects.map((project, key = 0) => (
       <ProjectCard
-        imageURL={project.imageURL}
-        title={project.title}
-        link={
-          project.link.includes("http")
-            ? project.link
+        image={project.image}
+        name={project.name}
+        url={
+          project.url.includes("http")
+            ? project.url
             : console.error(
                 new Error(
-                  " link property Must be prepended with http:// or https://  "
+                  " url property Must be prepended with http:// or https://  "
                 )
               )
         }
-        languages={project.languages}
+        description={project.description}
         key={key++}
       />
     ));
