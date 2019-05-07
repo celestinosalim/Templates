@@ -9,6 +9,8 @@
   animation-name: slidein;
 }
 .flex {
+  padding-top: 75px;
+  padding-bottom: 75px;
   display: flex;
   text-align: center;
   flex-direction: column;

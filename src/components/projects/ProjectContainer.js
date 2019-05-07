@@ -2,6 +2,7 @@ import React, { Component } from "react";
 import PropTypes from "prop-types";
 import ProjectCard from "./ProjectCard";
 import "../../styles/ProjectContainer.css";
+import Title from "../Title";
 
 const propTypes = {
   projects: PropTypes.array.isRequired
@@ -58,13 +59,12 @@ class ProjectContainer extends Component {
 
   render() {
     return (
-      <div className="container projects-container">
-        <div className="row project-title justify-content-center">
-          <span>Projects</span>
-        </div>
-        <br />
-        <div className="row justify-content-center">
-          {this.projectsToRender()}
+      <div className="container">
+        <Title />
+        <div className="projects-container">
+          <div className="row justify-content-center">
+            {this.projectsToRender()}
+          </div>
         </div>
       </div>
     );
