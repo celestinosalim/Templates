@@ -35,3 +35,10 @@
   color: white;
   transition: 0.3s all ease-in-out;
 }
+
+@media screen and (min-width: 400px) {
+  .skillsContainer .box {
+    margin: 5px;
+    min-width: auto;
+  }
+}
