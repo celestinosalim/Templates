@@ -1,6 +1,7 @@
 import React from "react";
 import PropTypes from "prop-types";
 import "../styles/Skills.css";
+import Title from "./Title";
 
 const arrayOfLength = function(expectedLength, props, propName, componentName) {
   const arrayPropLength = props[propName].length;
@@ -44,6 +45,7 @@ const Skills = props => {
 
   return (
     <div className="container justify-content-center">
+      <Title title="Skills" />
       <ul className="skillsContainer">{this.skillsToRender(skills)}</ul>;
     </div>
   );

@@ -1,0 +1,72 @@
+.section-title {
+  position: relative;
+  margin-top: 25px;
+  font-weight: bold;
+  color: #343636;
+  text-align: center;
+  font-size: 60px;
+  animation-duration: 1.5s;
+  animation-name: slidein;
+}
+.flex {
+  display: flex;
+  text-align: center;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.bar {
+  width: 140px;
+  text-align: center;
+  height: 4px;
+  background: #444649;
+  animation-duration: 1.5s;
+  animation-name: barslide;
+}
+
+@keyframes slidein {
+  from {
+    margin-left: 100%;
+    width: 300%;
+  }
+  to {
+    margin-left: 0%;
+    width: 14.5%;
+  }
+}
+
+@keyframes barslide {
+  from {
+    margin-left: 100%;
+    width: 0%;
+  }
+  to {
+    margin-left: 0%;
+    width: 14.5%;
+  }
+}
+
+@media screen and (max-width: 400px) {
+  @keyframes slidein {
+    from {
+      margin-left: 100%;
+      width: 300%;
+    }
+    to {
+      margin-left: 0%;
+      width: 43%;
+    }
+  }
+
+  @keyframes barslide {
+    from {
+      margin-left: 100%;
+      width: 0%;
+    }
+    to {
+      margin-left: 0%;
+      width: 43%;
+    }
+  }
+}
