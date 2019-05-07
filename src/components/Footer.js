@@ -1,5 +1,6 @@
 import React from "react";
 import "../styles/Footer.css";
+import PropTypes from "prop-types";
 
 const propTypes = {
   media: PropTypes.array.isRequired,
