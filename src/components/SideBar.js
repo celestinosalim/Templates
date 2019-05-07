@@ -46,7 +46,7 @@ class SideBar extends Component {
           {this.props.navLinks.map(nav => {
             return (
               <a
-                style={{ linkColor: this.props.linkColor }}
+                style={{ color: this.props.linkColor }}
                 href={nav.pathRef}
                 key={nav.pathRef}
               >
