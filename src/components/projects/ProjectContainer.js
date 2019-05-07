@@ -60,7 +60,7 @@ class ProjectContainer extends Component {
   render() {
     return (
       <div className="container">
-        <Title />
+        <Title title="Projects" />
         <div className="projects-container">
           <div className="row justify-content-center">
             {this.projectsToRender()}
