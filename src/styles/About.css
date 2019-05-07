@@ -4,12 +4,20 @@
 }
 
 .first-row {
-  padding-bottom: 20px;
+  font-size: 60px;
+  text-decoration: underline #595959;
+  text-decoration-skip-ink: none;
+  text-underline-position: under;
+  padding-bottom: 30px;
+  padding: 0px;
 }
 
 .image-col {
-  min-height: 800px;
-  padding-right: 15px;
+  padding: 30px;
+  min-height: 400px;
+  max-height: 400px;
+  text-align: right;
+  /* border: 5px solid green; */
 }
 
 .text-col {
@@ -39,13 +47,19 @@
 
 .my-card {
   object-fit: contain;
-  height: 100%;
-  width: 100%;
+  height: 90%;
+  width: 90%;
   position: relative;
   vertical-align: middle;
   border-style: none;
+  padding-top: 30px;
 }
 
+@media screen and (max-width: 1024px) {
+  .about-container {
+    padding-top: 575px;
+  }
+}
 @media screen and (max-width: 480px) {
   .about-container {
     padding-top: 0px;
@@ -57,6 +71,7 @@
   .image-col {
     min-height: auto;
     padding-bottom: 50px;
+    padding-left: 0px;
   }
 
   .text-col {

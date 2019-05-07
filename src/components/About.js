@@ -36,7 +36,7 @@ class About extends Component {
           </div>
         </div>
         <div className="row second-row">
-          <div className="col-md-6 col-sm-12 image-col">
+          <div className="col-md-6 col-sm-12 image-col justify-content-end">
             <img
               alt="About Image"
               className="my-card"
