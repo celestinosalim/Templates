@@ -1,6 +1,7 @@
 import React, { Component } from "react";
 import PropTypes from "prop-types";
 import "../styles/SideBar.css";
+import { Link } from "react-scroll";
 
 const propTypes = {
   navLinks: PropTypes.array.isRequired,
@@ -45,13 +46,18 @@ class SideBar extends Component {
         <div className="collapse" id="collapseExample">
           {this.props.navLinks.map(nav => {
             return (
-              <a
-                style={{ color: this.props.linkColor }}
-                href={nav.pathRef}
+              <Link
+                activeClass="active"
+                to={nav.pathRef}
                 key={nav.pathRef}
+                style={{ color: this.props.linkColor }}
+                spy={true}
+                smooth={true}
+                offset={-70}
+                duration={500}
               >
                 {nav.pathName}
-              </a>
+              </Link>
             );
           })}
         </div>
