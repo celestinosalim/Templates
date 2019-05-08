@@ -93,7 +93,8 @@ class Intro extends Component {
                 <a href={this.props.link}>
                   <span>{this.props.name}</span>
                 </a>
-
+                <br />
+                <br />
                 <span>{this.props.profession}</span>
               </span>
             </p>
