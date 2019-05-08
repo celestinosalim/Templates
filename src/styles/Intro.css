@@ -33,6 +33,7 @@
 #name a span {
   color: #056cf2;
   overflow: hidden;
+  padding-bottom: 15px;
 }
 
 #name a:hover span {
