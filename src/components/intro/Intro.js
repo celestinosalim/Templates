@@ -2,6 +2,7 @@ import React, { Component } from "react";
 import Circle from "./Circle";
 import PropTypes from "prop-types";
 import "../../styles/Intro.css";
+import { Link } from "react-scroll";
 
 const propTypes = {
   name: PropTypes.string.isRequired,
@@ -90,9 +91,18 @@ class Intro extends Component {
           <div className="canvas-text">
             <p style={{ textAlign: "center" }}>
               <span id="name">
-                <a href={this.props.link}>
+                <Link
+                  activeClass="active"
+                  to={this.props.link}
+                  key={this.props.link}
+                  style={{ color: this.props.linkColor }}
+                  spy={true}
+                  smooth={true}
+                  offset={-70}
+                  duration={500}
+                >
                   <span>{this.props.name}</span>
-                </a>
+                </Link>
                 <br />
                 <br />
                 <span>{this.props.profession}</span>
