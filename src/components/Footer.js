@@ -61,7 +61,11 @@ const Footer = props => {
       <div className="row justify-content-center">
         <span id="footer-text">
           Created by {name} using{" "}
-          <span gitstyle={{ color: "#056cf2" }}>VsualResume ©2019</span>
+          <span>
+            <a href="http://www.vsualresume.com" style={{ color: "#05DBF2" }}>
+              Vsual Resume ©2019
+            </a>
+          </span>
         </span>
       </div>
     </div>
