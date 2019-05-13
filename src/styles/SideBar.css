@@ -16,6 +16,7 @@
 
 .sidenav p {
   font-size: 30px;
+  cursor: pointer;
 }
 
 .sidenav a {
@@ -26,6 +27,7 @@
   background: transparent;
   opacity: 0.5;
   transition: all 0.2s ease-in-out;
+  cursor: pointer;
 }
 
 .sidenav a:hover {
